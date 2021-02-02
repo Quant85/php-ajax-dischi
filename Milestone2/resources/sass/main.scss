@@ -1,0 +1,40 @@
+@import 'variables';
+main{
+
+  .cds-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px 0;
+  
+    .cd {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      flex-basis: 200px;
+      padding: 20px;
+      margin: 10px 20px;
+      min-height: 360px;
+      background:$secondary-bg-color;
+      text-align: center;
+      img {
+        max-width: 100%;
+      }
+      h3 {
+        margin: 20px 0;
+        color: $color-white;
+        font-size: 22px;
+        text-transform: uppercase;
+      }
+      span.author {
+        color: $color-grey;
+        font-size: 20px;
+      }
+      span.year {
+        color: $color-grey;
+      }
+    }
+  }
+}

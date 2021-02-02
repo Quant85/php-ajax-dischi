@@ -1,0 +1,11 @@
+body {
+  background: $primary-bg-color;
+  font-family: $primary-font;
+  min-height: 100vh;
+}
+
+.container {
+  width: $container-width;
+  height: 100%;
+  margin: 0 auto;
+}

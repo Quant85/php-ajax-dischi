@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Music | PHP APpI</title>
+  <link rel="stylesheet" href="./public/assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./public/assets/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div id="appCd" class="app_wrap">
+    <header>
+      <div class="container">
+        <img src="./public/assets/img/logo.png" alt="logo" />
+      </div>
+    </header>
+
+    <main>
+      <div class="cds-container container">
+        <!-- Disco ad esempio -->
+        <div class="cd" v-for="album in listaDischi">
+          <img :src="album.poster" alt="">
+          <h3>{{album.title}}</h3>
+          <span class="author">{{album.author}}</span>
+          <span class="year">{{album.year}}</span>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- /.app_wrap -->
+
+  <script src="./public/assets/js/main.js" charset="utf-8"></script>
+</body>
+
+</html>
