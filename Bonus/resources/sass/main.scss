@@ -29,12 +29,14 @@ main{
         color: $color-white;
         font-size: 1.2em;
         text-transform: capitalize;
+        cursor: default;
       }
       span.author,
       span.year {
         color: $color-grey;
         font-size: 20px;
         padding: 8px;
+        cursor: default;
       }
       &:hover {
         transform: scale(1.05);

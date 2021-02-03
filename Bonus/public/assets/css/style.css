@@ -101,12 +101,14 @@ main .cds-container .cd h3 {
   color: white;
   font-size: 1.2em;
   text-transform: capitalize;
+  cursor: default;
 }
 main .cds-container .cd span.author,
 main .cds-container .cd span.year {
   color: grey;
   font-size: 20px;
   padding: 8px;
+  cursor: default;
 }
 main .cds-container .cd:hover {
   transform: scale(1.05);
