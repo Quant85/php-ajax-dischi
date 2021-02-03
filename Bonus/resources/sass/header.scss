@@ -1,0 +1,12 @@
+@import 'variables';
+
+
+header {
+  width: 100%;
+  height: 70px;
+  background: $secondary-bg-color;
+  img{
+    height: 50px;
+    margin-top: 10px;
+  }
+}
