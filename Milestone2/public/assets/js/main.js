@@ -1852,12 +1852,13 @@ var appCd = new vue__WEBPACK_IMPORTED_MODULE_1__.default({
   data: {
     listaDischi: ""
   },
+  methods: {},
   mounted: function mounted() {
     var _this = this;
 
     //const axios = require('axios');
-    axios__WEBPACK_IMPORTED_MODULE_0___default().get('public/server/api.php').then(function (resp) {
-      var disco = resp.data;
+    axios__WEBPACK_IMPORTED_MODULE_0___default().get('./resources/server/api.php').then(function (resp) {
+      var disco = resp.data.response;
       _this.listaDischi = disco;
     });
   }

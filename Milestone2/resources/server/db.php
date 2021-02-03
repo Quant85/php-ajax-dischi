@@ -1,8 +1,6 @@
 
 <?php
-
-//ridefinisco la struttura dell'API in json https://flynn.boolean.careers/exercises/api/array/music - riscrivendola con la sintassi  per simulare un dbserver php
-$db= [
+$data= [
   'success'=> true,
   'response'=> [
     [

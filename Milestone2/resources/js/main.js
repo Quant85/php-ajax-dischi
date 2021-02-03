@@ -8,12 +8,15 @@ let appCd = new Vue ({
 		data: {
 			listaDischi:"",
 		},
+		methods: {
+
+		},
 		mounted() {
       //const axios = require('axios');
 			axios
-				.get('public/server/api.php')
+				.get('./resources/server/api.php')
 				.then(resp => {
-					let disco = resp.data;
+					let disco = resp.data.response;
           this.listaDischi = disco;
 				});
       },

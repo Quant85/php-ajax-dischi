@@ -6,11 +6,12 @@
 
 body {
   background: #1E2D3B;
+  font-family: "Lato", sans-serif;
   min-height: 100vh;
 }
 
 .container {
-  width: 1070px;
+  width: 1280px;
   height: 100%;
   margin: 0 auto;
 }
@@ -25,10 +26,6 @@ header img {
   margin-top: 10px;
 }
 
-main {
-  /* background-color: $primary-bg-color;
-  max-width: 1260px; */
-}
 main .cds-container {
   display: flex;
   justify-content: center;
@@ -44,7 +41,7 @@ main .cds-container .cd {
   flex-basis: 200px;
   padding: 20px;
   margin: 10px 20px;
-  height: 360px;
+  min-height: 360px;
   background: #2e3a46;
   text-align: center;
 }
