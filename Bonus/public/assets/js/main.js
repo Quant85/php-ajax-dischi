@@ -1863,7 +1863,7 @@ var appCd = new vue__WEBPACK_IMPORTED_MODULE_1__.default({
   el: '#appCd',
   data: {
     listaDischi: [],
-    genere: ["pop", "rock"],
+    genere: [],
     key: "All"
   },
   methods: {

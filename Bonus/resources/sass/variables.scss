@@ -1,13 +1,26 @@
 $primary-font: 'Lato', sans-serif;
 $secondary-font: 'PT Sans',Arial,sans-serif;
 $primary-color: rgba(0, 0, 0, 0.87);
-$hover-link-color: #1159f5;
-$link-color: #3367d6;
 
 $color-grey: grey;
 $color-white: white;
 
-$primary-bg-color: #1E2D3B;
-$secondary-bg-color:rgb(46, 58, 70);
+$primary-bg-color-body: linear-gradient(0deg, rgba(219, 219, 219, 1) 0%, rgba(91, 105, 94, 1) 10%, rgba(169, 178, 173, 1) 90%, rgba(213, 216, 217, 1) 100%);
+
+$alternative-bg-color-body:#27272c;
+
+
+$secondary-bg-color:rgb(26, 26, 26);
+
+$alternative-bg-card:#212125;
+
+$box-shadow-card: 1px 1px 8px 6px rgba(248, 248, 248, 0.76) inset;
+
+$navabar-y: 70px;
 
 $container-width: 1280px;
+
+/* select */
+
+$select-border: #777;
+$select-focus: blue;

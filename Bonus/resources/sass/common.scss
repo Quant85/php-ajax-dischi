@@ -1,5 +1,5 @@
 body {
-  background: $primary-bg-color;
+  background: $primary-bg-color-body;
   font-family: $primary-font;
   min-height: 100vh;
 }
@@ -8,4 +8,10 @@ body {
   width: $container-width;
   height: 100%;
   margin: 0 auto;
+}
+
+
+@mixin flex($display:flex,$direction: row,$wrap:wrap) {
+  display: $display;
+  flex-flow: $direction $wrap;
 }

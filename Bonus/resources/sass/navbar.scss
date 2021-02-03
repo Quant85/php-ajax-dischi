@@ -1,0 +1,15 @@
+
+
+nav{
+  @include flex();
+  justify-content: space-between;
+  align-content: center;
+  padding: 12px;
+  div{
+    @include flex(flex, column, wrap);
+    justify-content: space-around;
+    height: $navabar-y;
+    color: $color-white;
+    font: 1.5em $primary-font;
+  }
+}

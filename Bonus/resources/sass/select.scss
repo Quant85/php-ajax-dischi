@@ -1,0 +1,23 @@
+select {
+  // A reset of styles, including removing the default dropdown arrow
+  appearance: none;
+  // Additional resets for further consistency
+  margin: 0;
+  min-width: 15ch;
+  width: 100%;
+  max-width: 30ch;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+  font-family: $primary-font;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  outline: none;
+  padding: 0.25em 0.5em;
+  border: 1px solid $select-border;
+  border-radius: 0.25em;
+}
+
+select::-ms-expand {
+  display: none;
+}

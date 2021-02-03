@@ -4,8 +4,9 @@
   margin: 0;
 }
 
+/* select */
 body {
-  background: #1E2D3B;
+  background: linear-gradient(0deg, #dbdbdb 0%, #5b695e 10%, #a9b2ad 90%, #d5d8d9 100%);
   font-family: "Lato", sans-serif;
   min-height: 100vh;
 }
@@ -16,48 +17,99 @@ body {
   margin: 0 auto;
 }
 
+/* select */
 header {
   width: 100%;
-  height: 70px;
-  background: #2e3a46;
+  min-height: 70px;
+  background: #1a1a1a;
 }
 header img {
   height: 50px;
   margin-top: 10px;
 }
 
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+  padding: 12px;
+}
+nav div {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  height: 70px;
+  color: white;
+  font: 1.5em "Lato", sans-serif;
+}
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin: 0;
+  min-width: 15ch;
+  width: 100%;
+  max-width: 30ch;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+  font-family: "Lato", sans-serif;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  outline: none;
+  padding: 0.25em 0.5em;
+  border: 1px solid #777;
+  border-radius: 0.25em;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+/* select */
 main .cds-container {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  padding: 100px 0;
+  padding: 2% 0;
 }
 main .cds-container .cd {
   display: flex;
-  justify-content: flex-start;
+  flex-flow: column wrap;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
   flex-basis: 200px;
   padding: 20px;
   margin: 10px 20px;
   min-height: 360px;
-  background: #2e3a46;
+  background: #212125;
   text-align: center;
+  border-radius: 5px;
+  box-shadow: 1px 1px 8px 6px rgba(248, 248, 248, 0.76) inset;
 }
 main .cds-container .cd img {
+  min-width: 160px;
+  min-height: 160px;
   max-width: 100%;
 }
 main .cds-container .cd h3 {
+  font-family: "PT Sans", Arial, sans-serif;
   margin: 20px 0;
   color: white;
-  font-size: 22px;
-  text-transform: uppercase;
+  font-size: 1.2em;
+  text-transform: capitalize;
 }
-main .cds-container .cd span.author {
-  color: grey;
-  font-size: 20px;
-}
+main .cds-container .cd span.author,
 main .cds-container .cd span.year {
   color: grey;
+  font-size: 20px;
+  padding: 8px;
 }
+main .cds-container .cd:hover {
+  transform: scale(1.05);
+}
+
+/* select */
