@@ -2,6 +2,10 @@
 
   <nav class="container">
     <img src="./public/assets/img/logo.png" alt="">
+    <div class="search">
+      <input type="search" name="" id="" v-model="search">
+    </div>
+    <!-- /.search -->
 
     <div class="select">
       <label for="genere">Seleziona il tuo genere:</label>

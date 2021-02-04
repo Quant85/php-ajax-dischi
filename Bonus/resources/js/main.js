@@ -9,6 +9,7 @@ let appCd = new Vue ({
 			listaDischi:[],
 			genere:[],
 			key:"All",
+			search:"",
 		},
 		methods: {
 			getCollection() {
@@ -24,6 +25,13 @@ let appCd = new Vue ({
 					.catch(error => {
             console.log(error);
         });
+			}
+		},
+		computed: {
+			filtred: function (){
+				return this.listaDischi.filter((autore) =>{
+					return autore.author.match(this.search);
+				});
 			}
 		},
 		mounted() {

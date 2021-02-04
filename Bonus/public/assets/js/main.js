@@ -1864,7 +1864,8 @@ var appCd = new vue__WEBPACK_IMPORTED_MODULE_1__.default({
   data: {
     listaDischi: [],
     genere: [],
-    key: "All"
+    key: "All",
+    search: ""
   },
   methods: {
     getCollection: function getCollection() {
@@ -1886,6 +1887,15 @@ var appCd = new vue__WEBPACK_IMPORTED_MODULE_1__.default({
         }
       })["catch"](function (error) {
         console.log(error);
+      });
+    }
+  },
+  computed: {
+    filtred: function filtred() {
+      var _this2 = this;
+
+      return this.listaDischi.filter(function (autore) {
+        return autore.author.match(_this2.search);
       });
     }
   },
